@@ -20,10 +20,19 @@
     <link href="assets/css/style.css?v0.1" rel="stylesheet" />
   </head>
   <body>
+
+    <!-- Scroll Button-->
+    <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top" style="position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+    </button>
+
     <!-- NavBar -->
     <div inclu="navbar"></div>
-      <div class="container">
-        <nav class="navbar  navbar-expand-xl navbar-dark bg-dark">
+      <div class="container-md">
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#">Start Booststrap</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,17 +41,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="https://4geeks.com/" target="_blank">About<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">services</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#">portfolio</a> 
-                
+                <a class="nav-link" href="https://4geeks.com/about-us" target="_blank">services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                <a class="nav-link" href="#portfolio">portfolio</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scroll" tabindex="-1" aria-disabled="true">Contact</a>
               </li>
             </ul>
           </div>
@@ -52,7 +60,7 @@
 
 
     <!-- Image Header -->
-    <div class="jumbotron jumbotron-fluid" style="background-image: url(skyline-shanghai.jpg);">
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(skyline-shanghai.jpg); width: auto">
         <div class="text1 bg-light text-center mb-3">
           <h1>One Page Wonder</h1>
         </div>
@@ -65,8 +73,8 @@
     <div class="container">
 
       <!-- first heading -->
-      <div class="container ms-5 p-5">
-        <div class="row" style= "margin-left: 100px">  
+      <div class="container-large ms-5 p-5">
+        <div class="row" style= "margin: auto">  
           <div class="col-8">
            <div class="texto mt-4 ms-5"> 
               <h2>The First Heading <span class="text-secondary">Will Catch Your Eye</span></h2> 
@@ -75,56 +83,103 @@
           </div>
           <div class="col-4">
             <div class="Walter border rounded-circle ms-2" style = "height: 340px; width: 330px">
-              <img class="rounded-circle" src="https://theheizenbergeffect.files.wordpress.com/2012/09/walter_white_breaking_bad-stanley-chow.jpg" style = "height: 100%; width: 100%">
+              <img class="rounded-circle" src="https://theheizenbergeffect.files.wordpress.com/2012/09/walter_white_breaking_bad-stanley-chow.jpg" 
+              style = "height: 100%; width: 100%">
             </div>
           </div>
         </div>
       </div>
-      <div class="container p-5">
-        <div class="row">
-          <div class="col-3 img dude ">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbuQb-VjT4umZ3sLppcuwrvn3sDUG32M5u3NfBZ7fucUCOBWqh&s" 
-            alt="keyboard"
-            class="rounded-circle object-fit-cover "
-            height="250"
-            width="250"/>
+
+       <!-- second heading -->
+       <div class="container-large me-5 p-5">
+        <div class="row" style= "margin: auto">  
+          <div class="col-4">
+            <div class="Keybord border rounded-circle me-2" style = "height: 340px; width: 330px">
+              <img class="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbuQb-VjT4umZ3sLppcuwrvn3sDUG32M5u3NfBZ7fucUCOBWqh&s" 
+              style = "height: 100%; width: 100%">
+            </div>
           </div>
-          <div class="col-9 heading">
-            <h1> The second heading <span class="text-secondary">is pretty cool too.</span></h1>
-            <p class="lead"> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, possimus! Fugit commodi dolor assumenda ipsum recusandae provident quo accusantium eos iusto, unde autem praesentium libero! Odit id reprehenderit sit sed!
-            </p>
+          <div class="col-8">
+           <div class="texto mt-4 ms-5"> 
+              <h2>The Second Heading <span class="text-secondary">is pretty cool too</span></h2> 
+              <p style="font-size: large">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate nesciunt dignissimos est veniam doloribus dolore amet, quaerat, quo consequatur minus harum numquam praesentium odit. Quod distinctio quis iusto quia molestiae?</p>
+            </div>
           </div>
         </div>
       </div>
-      <span require-file="./templates/portfolio.html"></span>
+
+
+      <!-- Portfolio -->
+
+      
+      <div class="container-fluid" id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.usmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Project Name</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+          
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project Name</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+          
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project Name</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+
+      <!-- Contact -->
       <div class="text-start mb-5 mt-5 ms-5">
-        <h2 class="fs-1 fw-semibold">Contact</h2>
+        <h2 class="fs-1 fw-semibold" id="scroll">Contact</h2>
         <p class="lead fw-normal">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, numquam? Ab et quo eos quis est debitis earum ducimus excepturi. Reprehenderit suscipit a quibusdam quidem vero et, dignissimos aliquam atque.
         </p>
       </div>
-       <div class="row justify-content-center">
-        <div class="col-md-8 mb-5">
-          <form class="row g-4">
-            <div class="col-md-3">
-              <label for="email" class="form-label d-flex align-items-center"><p class="fw-bold ms-auto text-center pt-1">Your Email</p></label>
-            </div>
-            <div class="col-md-9 ms-auto">
-              <input type="email" placeholder="Your email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="col-md-3 mt-0">
-              <label for="message" class="form-label d-flex align-items-center"><p class="fw-bold ms-auto text-center">Your Message</p></label>
-            </div>
-            <div class="col-md-9 mt-0">
-              <textarea class="form-control" placeholder="Please enter your message here..." id="message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="col-12 text-end">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div> 
+      <div class="container-fluid bg bg-seconary border border-secondary mb-5 pt-3 mx-auto" style="width: 600px">
+        <div class="row justify-content-center">
+          <div class="col-md-8 mb-5">
+            <form class="row g-4">
+              <div class="col-md-3">
+                <label for="email" class="form-label d-flex align-items-center"><p class="fw-bold ms-auto text-center pt-1">Your Email</p></label>
+              </div>
+              <div class="col-md-9 ms-auto">
+                <input type="email" placeholder="Your email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="col-md-3 mt-0">
+                <label for="message" class="form-label d-flex align-items-center"><p class="fw-bold ms-auto text-center">Your Message</p></label>
+              </div>
+              <div class="col-md-9 mt-0">
+                <textarea class="form-control" placeholder="Please enter your message here..." id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="col-12 d-flex mt-2 justify-content-end">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div> 
+      </div>
 
       <!-- Footer -->
       <footer>
@@ -150,5 +205,31 @@
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/fix.js"></script>
+
+    <script>let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 10 ||
+          document.documentElement.scrollTop > 10
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+      
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }</script>
+      
   </body>
 </html>
